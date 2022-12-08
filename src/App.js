@@ -4,8 +4,6 @@ import './App.css';
 
 
 function App() {
-  const url = `https://api.giphy.com/v1/gifs/search?api_key=${process.env.REACT_APP_GIPHY_KEY}`
-  console.log(url)
 	const [gifs, setGifs] = useState([]);
 	function getGifData() {
 			const url = `https://api.giphy.com/v1/gifs/search?api_key=${process.env.REACT_APP_GIPHY_KEY}&q=minions&limit=10&rating=G&lang=en`;
